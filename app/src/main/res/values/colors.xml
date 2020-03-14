@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#F07A2B</color>
+    <color name="colorAccent">#F07A2B</color>
+    <color name="textInputLayout">#96ffffff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="btnSignUp">#53AF4C</color>
+    <color name="btnSignActive">#A9d440</color>
+    <color name="bg">#3e5b74</color>
+    <color name="black">#000000</color>
+    <color name="cardviewcolor">#EEAFACAC</color>
+    <color name="red">#DD1212</color>
+</resources>

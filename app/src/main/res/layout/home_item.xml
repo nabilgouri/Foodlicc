@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="268dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="4dp"
+    app:layout_constraintCircleRadius="400dp"
+    android:background="@color/cardviewcolor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@id/relativeLayout">
+
+
+        <ImageView
+            android:id="@+id/res"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#CFD1680B"
+            android:scaleType="centerCrop"
+            android:src="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/name_resto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/res"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="20dp"
+
+
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="40dp"
+            android:text="Name of restaurant"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/im2"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="95dp"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/type_couisine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="17dp"
+            android:text="sandwiches" />
+
+        <TextView
+            android:id="@+id/statut"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="61dp"
+            android:background="@drawable/capsule"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowDx="@integer/google_play_services_version"
+            android:text="Disponible"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

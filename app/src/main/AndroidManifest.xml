@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.foodlicc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="FoodLic"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".OrderDetail"></activity>
+
+        <service
+            android:name=".FirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".EditProfile" />
+        <activity android:name=".OrderStatusActivity" />
+        <activity android:name=".Restaurant" />
+        <activity android:name=".password" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".OtpActivity" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".Register" />
+        <activity
+            android:name=".Cart"
+            android:theme="@style/AppTheme.cart" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LogIn" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+    </application>
+
+</manifest>
